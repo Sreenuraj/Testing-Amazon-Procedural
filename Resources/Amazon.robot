@@ -1,11 +1,11 @@
 *** Settings ***
 Library  SeleniumLibrary
-Resource  /Sreenu/Robort-Framework/Testing-Amazon-Procedural/Resources/PageObjects/LandingPage.robot
-Resource  /Sreenu/Robort-Framework/Testing-Amazon-Procedural/Resources/PageObjects/TopNavBar.robot
-Resource  /Sreenu/Robort-Framework/Testing-Amazon-Procedural/Resources/PageObjects/SearchResult.robot
-Resource  /Sreenu/Robort-Framework/Testing-Amazon-Procedural/Resources/PageObjects/ProductActions.robot
-Resource  /Sreenu/Robort-Framework/Testing-Amazon-Procedural/Resources/PageObjects/CartActions.robot
-Resource  /Sreenu/Robort-Framework/Testing-Amazon-Procedural/Resources/PageObjects/SignInPage.robot
+Resource  ../Resources/PageObjects/LandingPage.robot
+Resource  ../Resources/PageObjects/TopNavBar.robot
+Resource  ../Resources/PageObjects/SearchResult.robot
+Resource  ../Resources/PageObjects/ProductActions.robot
+Resource  ../Resources/PageObjects/CartActions.robot
+Resource  ../Resources/PageObjects/SignInPage.robot
 
 *** Keywords ***
 

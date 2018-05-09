@@ -1,7 +1,7 @@
 *** Settings ***
 Documentation    This will test the amazon site for adding a product
-Resource  /Sreenu/Robort-Framework/Testing-Amazon-Procedural/Resources/Amazon.robot
-Resource  /Sreenu/Robort-Framework/Testing-Amazon-Procedural/Resources/Common.robot
+Resource  ../Resources/Amazon.robot
+Resource  ../Resources/Common.robot
 #Suite Setup  Common.Lets run this at the beigning of the suite
 #Test Setup  Common.Open browser and maximise
 #Test Teardown  Common.Close the browser
@@ -10,7 +10,7 @@ Suite Setup  Common.Open browser and maximise
 Suite Teardown  Common.Close the browser
 
 
-*** Variables  ***
+*** Variables ***
 ${URL} =  https://www.amazon.in/
 ${BROWSER} =  chrome
 ${SEARCH_TERM} =  alexa
@@ -18,6 +18,7 @@ ${SEARCH_TERM} =  alexa
 
 *** Test Cases ***
 User search for a product
+    [tags]  smoke
     Amazon.Go to the url
     Amazon.Search for a product
 
